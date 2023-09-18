@@ -1,6 +1,6 @@
 # Data_Visualization
 
-please use npm install command to install all the required packages.<br>
+please use npm install command to install all the required packages. If any error comes which using the command then use npm install --legacy-peer-deps command. <br>
 
 Please use npm start to start the server.
 
