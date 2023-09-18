@@ -2,6 +2,8 @@
 
 please use <b>npm install</b> command to install all the required packages. If any error comes which using the command then use <b>npm install --legacy-peer-deps</b> command. <br>
 
+After all the required packages gets installed. <br>
+
 Please use npm start to start the server.
 
 Below is the demo of the product
