@@ -1,4 +1,4 @@
-#Data Visualization
+<h1>Data Visualization</h1>
 
 please use <b>npm install</b> command to install all the required packages. If any error comes which using the command then use <b>npm install --legacy-peer-deps</b> command. <br>
 
