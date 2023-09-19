@@ -50,6 +50,7 @@ export default class Utility {
     public static findMode(data: any, propertyName: string) {
         let storeFrequency: { [key: string | number]: any } = {};
         let max_occurrence = 0;
+        let res = 0;
         data?.forEach((item: any) => {
             let curr_value: any;
             if(propertyName === Constants.Flavanoids)
@@ -62,10 +63,12 @@ export default class Utility {
             } else {
                 storeFrequency[curr_value] = 1;
             }
-            if(storeFrequency[curr_value] > max_occurrence)
+            if(storeFrequency[curr_value] > max_occurrence) {   
+                res = curr_value;
                 max_occurrence = storeFrequency[curr_value]
+            }
         })
-        // here we need to return the occurence actually but in the assignment it's requested that value should be rounded with 3 places
-        return max_occurrence.toString() + ".000";
+        // here we need to return the value having maximum occurence
+        return res.toFixed(3);
     }
 }
